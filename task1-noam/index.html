@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1-pinboard-noam</title>
+    <link href="task1-noam.css" rel="stylesheet"/> 
+</head>
+<body>
+    <div class="flexbox">
+        <img src="title.png">
+    </div>
+    <div class="flexbox">
+        <form class="flexbox">
+            <div>
+                <input name="taskDescription" type="text" placeholder="Type your task here..." autocomplete="off"
+                spellcheck="false" required/><br>
+                <input name="taskDate" type="date" required/><br>
+                <input name="taskTime" type="time" required/><br>                  
+            </div>
+            <div class="buttons">
+                <button type="submit">Add mission</button>
+                <button type="button" onclick="cleanBoard()">Clean board</button>
+                <button type="button" onclick="cleanForm()">Clean Form</button>
+            </div>
+        </form>
+
+    </div>
+    <br>
+    <div class="notes">
+    </div>
+    <script src="task1-noam.js"></script>
+</body>
+</html>

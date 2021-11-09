@@ -1,0 +1,101 @@
+*{
+    font-family: Bradley Hand, cursive;
+}
+
+body{
+    background-image:url("tile.jpg");
+}
+
+input{
+    background-image: url("formbg.jpg");
+    border: none;
+    color: black;
+    outline: none;
+    padding: 21px;
+    width: 300px;
+    font-size: large;
+    text-align: center;
+}
+
+.buttons{
+    display: inline-block;
+}
+
+button{
+    margin: 7px 20px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.note{
+    background-image: url("notebg.png");
+    width: 160px;
+    height: 170px;
+    padding: 40px 20px;
+    display: inline-block;
+    animation: fadeIn 1.5s;
+    position: relative;
+    max-width: 160px;
+    overflow: auto;
+}
+
+.note:hover .btnX {
+    display: inline-block;
+    animation: fadeIn 1.5s;
+    
+}
+
+.notes{
+    display: inline-block;
+    position: relative;
+}
+
+.btnX{
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 115);
+    position: absolute;
+    font-weight: bold;
+    top: 15px;
+    right: 8px;
+    display: none;
+}
+
+.btnX:hover{
+    display: inline-block;
+}
+
+.time1{
+    color: rgb(39, 0, 214);
+    margin-top: 0px;    
+    position: static;
+    bottom: 20px;
+    left: 20px;
+}
+
+.time2{
+    color: rgb(39, 0, 214);
+    margin-top: 100px;    
+    position: static;
+    bottom: 40px;
+    left: 20px;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
